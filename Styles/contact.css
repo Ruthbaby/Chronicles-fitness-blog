@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+.circle {
+  background-color: #03a0d0;
+  width: 260px;
+  height: 200px;
+  border: 20px solid #b11b1b;
+  border-radius: 10px;
+  margin: 100px auto;
+  outline: 5px solid #ff0aca;
+  outline-offset: -20px;
+}
