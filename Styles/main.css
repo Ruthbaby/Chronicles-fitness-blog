@@ -16,11 +16,12 @@ body {
   width: 100%;
   height: 50%;
   object-fit: cover;
+ 
 }
-.container-two img {
+/* .container-two img {
   max-width: 300px;
   max-height: 300px;
-}
+} */
 
 .sub-container {
   width: 100%;
@@ -76,24 +77,20 @@ span .tag1 {
   
 
 }
-/* Advertisement Section */
-.advert {
-  text-align: center;
-  background-color: #ececec;
-  padding: 5px;
-  margin: 20px;
-}
- .advert h4{
- display: flex;
- /* border: 2px solid red; */
- justify-content: center;
- align-items: center;
- margin: 10px 472px ;
- padding: 15px;
- height:80px;
- width: 380px;
- background-color: #E8E8EA;
- 
+
+div.advert {
+  display: flex;
+  flex-direction: column;
+  max-width: 32%;
+  justify-content:center;
+  align-items: center;
+  padding: 10px;
+  max-height: 50%;
+  /* border: 2px solid red; */
+  background-color: #E8E8EA;
+  margin: auto;
+  border-radius: 6px;
+  margin: 60px auto;
 }
 
 /* Latest Post Title */
@@ -101,7 +98,8 @@ span .tag1 {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #333;
+  color: #E8E8EA;
+  
 }  
 
 /* Post Grid Styling */
@@ -109,24 +107,26 @@ span .tag1 {
   display: grid;
   gap: 1.0rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  width: min(100%, 90%);
+  width: min(100%, 950px);
   margin-inline: 12%;
   background-color: #fff;
   overflow: hidden;
-  /* transition: transform 0.3s ease-in-out; */
+  transition: transform 0.5s ease-in-out;
 }
 
 .info-text img.test {
-  width: 30px;
+  /* width: 30px; */
   border: 2px solid #2b59fe;
   border-radius: 100%;
   height:30px ;
-
+  max-width: 100%;
+  max-width: fit-content;
+  image-rendering: optimizeQuality;
 }
 
-/* .grid-post:hover {
-  /* transform: translateY(-5px); */
-
+.grid-post:hover {
+   transform: translateY(5px); 
+}
 
 .info-text {
   padding-block: 15px;
@@ -144,7 +144,7 @@ span .tag1 {
 
 .info-text h3 {
   font-size: 18px;
-  color: #333;
+  color: #696A75;
   margin-bottom: 8px;
 }
 
@@ -152,7 +152,7 @@ span .tag1 {
   display: flex;
   /* border: 2px solid red; */
   font-size: 13px;
-  color: #888;
+  color: #696A75;
   gap: 8px;
   margin: -25px 0 0 35px;
 }
@@ -174,7 +174,8 @@ span .tag1 {
 }
 
 button:hover {
-  color: #696A75;
+  background-color: #bac4ea;
+  
 }
 
  /* Responsive Design */
@@ -184,7 +185,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 468px) {
   .grid-post {
       width: 100%;
   }
