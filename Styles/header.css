@@ -6,10 +6,10 @@
   justify-content: space-between;
   align-items:center;
   background-color: #fff;
-  padding: 15px 30px;
-  margin: 0px 20px;
-  /* gap: 10px; */
-  width: 100%;
+  padding: 15px;
+  margin:  20px;
+  gap: 10px;
+  width: 80%;
   height: auto;
  }
 
@@ -18,7 +18,8 @@
   height: 40px;
   width: 40px;
   background-color: #fff;
-  position: absolute; 
+  position: absolute;
+  padding: 3px; 
 }
 
 .text h1 {
@@ -26,7 +27,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-left: 40px;
+  margin: 0 35px;
   padding: 5px;
 }
 
@@ -34,7 +35,8 @@
   display: flex;
   list-style: none;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 .nav-links li {
@@ -42,23 +44,21 @@
   margin-right: 20px;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   font-weight: 400;
   font-size: normal;
-  gap: 4px;
-
 }
 
 .nav-links a {
-  color: rgb(69, 25, 25);
+  color: #0f0f0f;
   text-decoration: none;
   font-size: 16px;
   line-height: 24px;
-
 }
 
 .nav-links a:hover {
-  color: #333;
+  color: #0070f9;
+  background-color: #186f59;
 }
 
 /* Search form styles */
@@ -74,7 +74,7 @@
   outline: none;
   background-color: #e7e7e8;
   height: 22px;
-
+  
 }
 
 .search-container input::placeholder {
@@ -93,7 +93,6 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
-  
 }
 
 div .search-container input{
