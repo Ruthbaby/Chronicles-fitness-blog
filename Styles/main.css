@@ -183,30 +183,53 @@ button:hover {
 }
 
  /* Responsive Design */
+/* For Large and mobile devices (max-width: 480px) */
 @media screen and (max-width: 768px) {
-  .grid-post {
-      width: 45%;
+  .post-text {
+    width: 50%;
+    left: 10px;
+    top: 600px;
+  }
+
+  .grid-column {
+    grid-template-columns: repeat(2, 1fr); /* Adjust grid to 2 columns */
+  }
+
+  .advert {
+    max-width: 50%; /* Adjust advert width */
+  }
+  
+  .view-all button {
+    font-size: 14px; /* Adjust button font size */
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 468px) {
-  .grid-post {
-      width: 100%;
+@media screen and (max-width: 480px) {
+  .post-text {
+    width: 80%;
+    left: 5px;
+    top: 400px;
+    font-size: smaller;
   }
 
- .grid-post {
-  min-height: auto;
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr);
-  padding-block: 2rem;
-  margin: 3%;
-  width: min(90%, 60rem);
-  margin-inline: auto;
- }
+  .grid-column {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
 
-.advert { 
-  margin-top: 50px;
-}
+  .grid-post img {
+    height: auto;
+    width: 100%;
+  }
 
+  .advert {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+
+  .view-all button {
+    font-size: 12px;
+    width: 100%;
+    padding: 10px;
+  }
 }

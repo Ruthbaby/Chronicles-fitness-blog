@@ -33,7 +33,6 @@
   max-width: 38%;
 }
 
-
 .footer ul {
   list-style-type: none;
   padding: 0;
@@ -132,3 +131,50 @@ footer .social-links img {
   width: 30px;
   margin: 0 10px;
 } */
+
+/* For tablets and larger phones */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* to stack sections vertically */
+    text-align: center; 
+  }
+
+  .footer div {
+    width: 100%; /* Full width for smaller screens */
+    margin: 10px 0;
+  }
+
+  .about {
+    max-width: 100%; /* Adjust width to take full space */
+  }
+
+  button, input[type='email'] {
+    width: 100%; /* Ensure full width for form elements */
+  }
+}
+
+/* For small devices (phones) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px; /* Adjust padding for smaller devices */
+  }
+
+  .newsletter {
+    gap: 10px; /* Adjust the gap between input and button */
+  }
+
+  input[type='email'], button {
+    width: 100%; /* Full width for input and button on small screens */
+    padding: 10px; /* Adjusted padding */
+  }
+
+  .footer-bottom {
+    flex-direction: column; /* to stack the bottom footer content */
+    text-align: center;
+  }
+
+  .footer-bottom ul li {
+    display: block; /* to display list items in a column */
+    margin: 5px 0;
+  }
+}
