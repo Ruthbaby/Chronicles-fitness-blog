@@ -74,7 +74,7 @@
   outline: none;
   background-color: #e7e7e8;
   height: 22px;
-  
+  padding: 13px;
 }
 
 .search-container input::placeholder {
@@ -82,6 +82,7 @@
   font-size: 14px;
   outline: none;
   appearance: none;
+  padding: 3px;
 }
 
 /* Style the search icon */
