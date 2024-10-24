@@ -78,7 +78,7 @@ button {
   border-radius: 6px;
   color: fff;
   border-style: none;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 
  /* Bottom footer section  */
@@ -119,24 +119,51 @@ flex-direction: column;
   text-decoration: none;
 }
 
-/* Footer Section */
-/* footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
+/* For small devices (phones) */
+@media (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+  .footer {
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 0px 10px; /* padding for smaller devices */
+  }
 
-footer .social-links img {
-  width: 30px;
-  margin: 0 10px;
-} */
+  .newsletter {
+    gap: 5px; /* the gap between input and button */
+  }
+
+  input[type='email'], button {
+    width: 100%; /* Full width for input and button on small screens */
+    padding: 10px; 
+    /* line-height: 25px; */
+    /* margin: 0%; */
+  }
+
+  .footer-bottom {
+    flex-direction: column; /* to stack the bottom footer content */
+        
+    /* justify-content: space-between;
+    gap: 2px; */
+  }
+
+  .footer-bottom ul li {
+    display: block; /* to display list items in a column */
+    /* margin: 5px 0; */
+  }
+}
 
 /* For tablets and larger phones */
 @media (max-width: 768px) {
+  .container{
+    max-width: 768px;
+  }
+
   .footer {
     flex-direction: column; /* to stack sections vertically */
-    text-align: center; 
+    /* text-align: center;  */
   }
 
   .footer div {
@@ -153,28 +180,19 @@ footer .social-links img {
   }
 }
 
-/* For small devices (phones) */
-@media (max-width: 480px) {
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
   .footer {
-    padding: 20px 10px; /* Adjust padding for smaller devices */
+    display: flex;
+    flex-direction: column;
+  }
+  button, input[type='email'] {
+    width: 100%;
   }
 
-  .newsletter {
-    gap: 10px; /* Adjust the gap between input and button */
-  }
-
-  input[type='email'], button {
-    width: 100%; /* Full width for input and button on small screens */
-    padding: 10px; /* Adjusted padding */
-  }
-
-  .footer-bottom {
-    flex-direction: column; /* to stack the bottom footer content */
-    text-align: center;
-  }
-
-  .footer-bottom ul li {
-    display: block; /* to display list items in a column */
-    margin: 5px 0;
-  }
+  .footer div {
+    width: 100%;
+}
 }
