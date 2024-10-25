@@ -16,6 +16,7 @@ body {
 .container {
   min-height: 100vh;
   max-width: 100%;
+ 
 }
 /* home page styling */
 .sub-container img {
@@ -193,7 +194,7 @@ button:hover {
 
  /* Responsive Design */
 /* For Large and mobile devices (max-width: 480px) */
-@media screen and (max-width: 486px) {
+@media (max-width: 486px) {
   .container {
     max-width: 486px;
     max-height: 100vh;
@@ -203,12 +204,11 @@ button:hover {
     left: 5px;
     top: 400px;
     font-size: smaller;
-
+    
   }
 
   /* .sub-container .tag1 h3{
-     position: fixed; 
-     
+     position: relative; 
   } */
 
   .grid-column {
@@ -217,23 +217,23 @@ button:hover {
   }
 
   .grid-post img {
-    height: auto;
+    /* height: auto; */
     width: 100%;
   }
 
   .advert {
     max-width: 90%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 
   .view-all button {
     font-size: 12px;
     width: 100%;
-    padding: 10px;
+    padding: 0px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .post-text {
     width: 50%;
     left: 10px;
@@ -251,6 +251,13 @@ button:hover {
   .view-all button {
     font-size: 14px; /* Adjust button font size */
     width: 100%;
+  }
+}
+
+@media  (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 40px;
   }
 }
 
