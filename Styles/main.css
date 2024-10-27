@@ -10,7 +10,7 @@
 body {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
-
+  
 } 
 
 .container {
@@ -21,8 +21,11 @@ body {
 /* home page styling */
 .sub-container img {
   width: 100%;
-  /* min-height: 100vh; */
+  height: 100%;
   object-fit: cover;
+  overflow: hidden;
+  object-position: center;
+  
 }
 
 .sub-container {
@@ -34,6 +37,7 @@ body {
   padding: 20px;
   position: relative;
   margin-bottom: 100px;
+  /* height: 100vh; */
 }
 
 .post-text{
